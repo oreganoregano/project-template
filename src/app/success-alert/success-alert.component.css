@@ -1,0 +1,7 @@
+div {
+    border: 1px solid green;
+    background-color: #90ee90;
+    border-radius: 1em;
+    padding: .05em 2em;
+    margin-bottom: 1em;
+}
