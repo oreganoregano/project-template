@@ -1,0 +1,15 @@
+<button class="btn btn-primary" (click)="onClickDisplayButton()">
+  {{ getButtonText() }}
+</button>
+<p *ngIf="displayParagraph">
+  This is a paragraph that I want to disappear and reappear on command.
+</p>
+<p>
+  <span
+    *ngFor="let entry of clickArray"
+    [ngStyle]="{ background: getBackgroundColor(entry) }"
+    [ngClass]="{ whiteText: getColor(entry) }"
+  >
+    {{ entry }}
+  </span>
+</p>
